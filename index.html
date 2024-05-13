@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Rolando</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="aktualisiereUhrzeit()">
+    <header>
+
+        <img class="logo" src="Pictures/Logo.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html" style="color: #4cfd38;">Homepage</a></li>
+                <li><a href="leben.html">Leben</a></li>
+                <li><a href="karriere.html">Karriere</a></li>
+                <li><a href="titel.html">Titel & Auszeichnungen</a></li>
+                <li><a href="gewinnspiel.html">Gewinnspiel</a></li>
+            </ul>
+        </nav>
+        <div id="uhrzeit" style="color: #4cfd38;"></div>
+        <a class="cta" href="mailto:manuel.holm1@gmail.com" style="background-color: rgb(13, 13, 13);"><Button>Contact</Button></a>
+
+    </header>
+
+
+    <div id="box1" style="background-color: rgb(13, 13, 13);">
+    </div>
+    <div id="box2" style="background-color: rgb(13, 13, 13);"></div>
+    <div id="box3" style="height: 2000px; border-radius: 20px;">
+        <div class="slider-frame">
+            <div class="slide-images">
+                <div class="img-container">
+                    <img src="Pictures/ronaldo1.jpg" alt="">
+                </div>
+                <div class="img-container">
+                    <img src="Pictures/ronaldo5.jpg" alt="">
+                </div>
+                <div class="img-container">
+                    <img src="Pictures/ronaldo3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <br><br> <br>
+        <h1 id="h1" style="text-align: center; background-color: rgb(34, 35, 35);">Herzlich willkommen!</h1> <br><br>
+        <div id="text">
+            auf der offiziellen Website des wohl besten Fußballers aller Zeiten - Cristian Rolando, besser bekannt als
+            CR10. <br><br><br> Hier auf dieser Seite werden Sie in die Welt des Fußballs und des Erfolgs eingeführt und
+            können hautnah miterleben, <br> wie CR10 zur lebenden Legende wurde. Wir laden Sie ein, auf eine
+            unvergessliche Reise mit uns zu gehen und das Phänomen CR10 zu entdecken. <br> <br><br>
+            Tauchen Sie ein in die Welt des Profifußballs und erfahren Sie alles, was es über die Karriere des
+            unvergleichlichen Spielers zu wissen gibt: <br> von seinen Anfängen in den Jugendmannschaften bis hin zu
+            seinen größten Erfolgen auf den internationalen Bühnen. Seien Sie hautnah dabei, <br> wenn CR10 auf dem
+            Platz für Furore sorgt und seine Gegner mit seinen unglaublichen Fähigkeiten in den Bann zieht. <br><br><br>
+            Hier auf unserer Website verpassen Sie keine Neuigkeit rund um CR10. Sie erhalten alle aktuellen
+            Informationen zu bevorstehenden Spielen, <br> Trainingseinheiten, und vielem mehr. Wir halten Sie stets auf
+            dem Laufenden, damit Sie keinen Moment verpassen. <br>
+            Doch das ist noch längst nicht alles. Als echter Fan von CR10 können Sie auf unserer Website auch an
+            exklusiven Verlosungen <br> teilnehmen und sich die Chance sichern, eines unserer begehrten
+            Verlosungsartikel zu gewinnen. Lassen Sie sich diese einmalige <br> Gelegenheit nicht entgehen und holen Sie
+            sich ein Stück von CR10 nach Hause. <br><br><br>
+            Wir freuen uns darauf, Sie auf unserer Website begrüßen zu dürfen und Sie auf Ihrer Reise durch die Welt des
+            Fußballs zu begleiten: <br> gemeinsam mit dem besten Spieler aller Zeiten: CR10. <br><br><br><br>
+        </div>
+        <h1 style="text-align: center; background-color: rgb(34, 35, 35);">Begleiten Sie uns und lassen Sie uns
+            gemeinsam die Legacy des GOATs fortführen</h1><br><br><br>
+        <div style="background-color: rgb(34, 35, 35); text-align: center;">
+            <iframe id="video" src="https://www.youtube.com/embed/vk7mxvD8bnA"
+                title="Cristiano Ronaldo ● LEGEND ● Epic Skills &amp; Goals || Short Movie || HD" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen ></iframe>
+        </div>
+    </div>
+
+
+    <div id="navigation2">
+        <div id="col1">
+            <br><br><br>
+            <div class="col"><a href="agb.html" style="background-color: rgb(13, 13, 13);">AGBs</a></div>
+            <br><br><br>
+            <div class="col"><a href="datenschutzerklärung.html"
+                    style="background-color: rgb(13, 13, 13);">Datenschutzerklärung</a></div>
+            <br><br><br>
+            <div class="col"><a href="impressum.html" style="background-color: rgb(13, 13, 13);">Impressum</a></div>
+        </div>
+        <div id="col2" class="col">
+            <br>
+            <p style="font-weight: 800; background-color: rgb(13, 13, 13);">Anmelden und an den Gewinnspielen
+                teilnehmen!</p>
+            <form id="anmeldung">
+                <div>
+                    <input id="mail" required type="email" placeholder="Email"
+                        style="text-align: center; border: none; border-radius: 50px;">
+                </div>
+                <br>
+                <div>
+                    <input id="pwd" required type="password" placeholder="Passwort"
+                        style="text-align: center; border: none; border-radius: 50px;">
+                </div>
+                <br>
+                <div id="button1" style="background-color: rgb(13, 13, 13);">
+                    <Button id="submit" type="submit" onclick="openPopup()">Bestätigen</Button>
+
+                    <Button id="btnDelete" type="reset">Löschen</Button>
+                <div class=" popup" id="popup">
+                        <img src="Pictures/Leben/Check.png" alt="">
+                        <h2>Danke!</h2><br>
+                        <p>Sie haben sich erfolgreich für das Gewinnspiel angemeldet! Weitere Deatails folgen in Kürze
+                            per Mail!</p><br>
+                        <button id="btnok" type="button" onclick="closePopup()">OK</button>
+                </div>
+        </div>
+        </form>
+    </div>
+    <div id="col3" class="col">
+        <br>
+        <p style="font-weight: 800; background-color: rgb(13, 13, 13);">Social Media</p>
+        <a href="https://www.facebook.com/Cristiano/?locale=de_DE" class="fa fa-facebook"
+            style="background-color: rgb(13, 13, 13);"></a>
+        <a href="https://twitter.com/Cristiano?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            class="fa fa-twitter" style="background-color: rgb(13, 13, 13);"></a>
+        <a href="https://www.youtube.com/shorts/kQyCp9zOBk4" class="fa fa-youtube"
+            style="background-color: rgb(13, 13, 13);"></a>
+        <a href="https://www.instagram.com/cristiano/?hl=de" class="fa fa-instagram"
+            style="background-color: rgb(13, 13, 13);"></a>
+    </div>
+    </div>
+    <script>
+
+        var form = document.getElementById("anmeldung");
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+        });
+
+        let popup = document.getElementById("popup");
+        var emailField = document.getElementById("mail");
+        var passwordField = document.getElementById("pwd");
+
+        function openPopup(event) {
+            if (emailField.value == "" || passwordField.value == "") {
+                return;
+            }
+            popup.classList.add("open-popup");
+
+        }
+        function closePopup() {
+            var emailField = document.getElementById("mail");
+            var passwordField = document.getElementById("pwd");
+            emailField.value == "";
+            passwordField.value == "";
+            popup.classList.remove("open-popup");
+
+        }
+    </script>
+    <script src="uhrzeit.js"></script>
+</body>
+
+</html>
